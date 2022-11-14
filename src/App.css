@@ -1,10 +1,28 @@
 .App {
   text-align: center;
 }
-
+.principal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+.centralizar{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.allbeers{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
