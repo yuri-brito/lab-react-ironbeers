@@ -3,9 +3,9 @@ import beer from '../assets/beers.png'
 import newBeer from '../assets/new-beer.png'
 import randomBeer from '../assets/random-beer.png'
 import {Link} from 'react-router-dom'
-import{Card,CardBody,CardTitle,CardSubtitle,CardText,Button} from 'reactstrap'
+import{Card,CardBody,CardTitle,CardText} from 'reactstrap'
 function Home(){
-    
+
     return(
         <div className='principal'>
 

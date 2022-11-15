@@ -5,13 +5,14 @@ import {Spinner} from 'react-bootstrap'
 import axios from 'axios'
 import {Card,CardBody,CardTitle,CardSubtitle,CardText} from 'reactstrap'
 
-function RandomBeer(){
+function SingleBeer(){
     const[Beer, setBeer]=useState([])
     const[loading, setLoading]=useState(true)
+    let id = useParams();
     useEffect(()=>{
         async function fetchList(){
             try {
-                const response= await axios.get(`https://ih-beers-api2.herokuapp.com/beers/random`);
+                const response= await axios.get(`https://ih-beers-api2.herokuapp.com/beers/${id.id}`);
                 setBeer(response.data)
                 setLoading(false)
                 
@@ -20,8 +21,7 @@ function RandomBeer(){
             }
         }
         fetchList();
-    },[])
-    console.log(Beer)
+    },[id])
     return(
         <div>  
             <MenuHome/>
@@ -59,4 +59,4 @@ function RandomBeer(){
         </div>
     )
 }
-export default RandomBeer;
+export default SingleBeer;
