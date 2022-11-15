@@ -15,12 +15,12 @@ function NewBeer(){
         else{
             setBody({...body,[e.target.name]:e.target.value})
         }
-        console.log(body)
+
     }
 
     async function handleSubmit(e){
         e.preventDefault();
-        console.log(body)
+
         try {
             await axios.post('https://ih-beers-api2.herokuapp.com/beers/new',body)
             navigate('/beers')
