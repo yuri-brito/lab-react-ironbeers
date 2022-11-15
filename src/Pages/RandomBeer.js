@@ -27,7 +27,7 @@ function RandomBeer(){
             {loading?<Spinner animation="border" role="status"><span className="visually-hidden">Loading...</span></Spinner>:
             <div className='allbeers'>
                 <Card body color="secondary" outline style={{ width: '25rem',margin:'10px',}}>
-                <img src={Beer.image_url} alt='image' width={80}/> 
+                <img src={Beer.image_url} alt='beer' width={80}/> 
                 <CardBody>
                     <div className='title'>
                         <CardTitle tag="h3">
