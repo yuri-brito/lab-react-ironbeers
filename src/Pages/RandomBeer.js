@@ -1,6 +1,5 @@
 import MenuHome from '../components/MenuHome'
 import {useState,useEffect} from 'react'
-import { useParams } from 'react-router-dom'
 import {Spinner} from 'react-bootstrap'
 import axios from 'axios'
 import {Card,CardBody,CardTitle,CardSubtitle,CardText} from 'reactstrap'
@@ -28,7 +27,7 @@ function RandomBeer(){
             {loading?<Spinner animation="border" role="status"><span className="visually-hidden">Loading...</span></Spinner>:
             <div className='allbeers'>
                 <Card body color="secondary" outline style={{ width: '25rem',margin:'10px',}}>
-                <img src={Beer.image_url} width={80}/> 
+                <img src={Beer.image_url} alt='image' width={80}/> 
                 <CardBody>
                     <div className='title'>
                         <CardTitle tag="h3">

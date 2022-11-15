@@ -42,7 +42,7 @@ function Beer(){
             listBeer.map((obj)=><div className='allbeers' key={listBeer.indexOf(obj)}><Link to={`/${obj._id}`} style={{textDecoration:'none',color:'black'}}>
                 <Card body color="secondary" outline style={{ width: '50rem',margin:'10px',}}>
                 <div className='insideCard'>
-                <img src={obj.image_url} width={80}/> 
+                <img src={obj.image_url} alt='image' width={80}/> 
                 <div className='cardb'>
                 <CardBody>
                     <CardTitle tag="h5">
